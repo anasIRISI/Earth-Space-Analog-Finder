@@ -106,6 +106,7 @@ REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": ["rest_framework.authentication.SessionAuthentication"],
     "DEFAULT_RENDERER_CLASSES": ["rest_framework.renderers.JSONRenderer"],
     "EXCEPTION_HANDLER": "config.exceptions.api_exception_handler",
+    "DEFAULT_PERMISSION_CLASSES": ["rest_framework.permissions.AllowAny"],
 }
 SPECTACULAR_SETTINGS = {
     "TITLE": "Earth-Space Analog Finder API",
