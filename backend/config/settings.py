@@ -12,6 +12,7 @@ if sys.version_info[:2] != (3, 12):
 BASE_DIR = Path(__file__).resolve().parent.parent
 load_dotenv(BASE_DIR.parent / ".env", override=False)
 
+MARS_RASTER_DIR = BASE_DIR / "data" / "mars"
 
 def csv_env(name, default=""):
     return [value.strip() for value in os.environ.get(name, default).split(",") if value.strip()]

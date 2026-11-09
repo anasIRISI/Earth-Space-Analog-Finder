@@ -29,7 +29,7 @@ class ProfilMixin(models.Model):
         "rugosite_moy":        (0, 200),
         "relief_local":        (0, 2000),
         "albedo_moy":          (0, 0.5),
-        "ati_moy":             (0, 2000),
-        "amplitude_thermique": (0, 80),
+        "ati_moy":             (0, 10),
+        "amplitude_thermique": (0, 120),
         "indice_fer":          (0, 1),
     }

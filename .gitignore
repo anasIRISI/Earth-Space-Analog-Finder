@@ -19,3 +19,6 @@ data/processed/*
 !data/processed/.gitkeep
 *.log
 .DS_Store
+backend/data/mars/
+data/mars/source/
+data/terre/*.csv
