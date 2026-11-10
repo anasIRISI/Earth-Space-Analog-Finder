@@ -21,4 +21,10 @@ data/processed/*
 .DS_Store
 backend/data/mars/
 data/mars/source/
-data/terre/*.csv
+.env
+data/mars/source/
+backend/data/mars/*.tif
+backend/data/mars/*.aux.xml
+__pycache__/
+node_modules/
+frontend/dist/

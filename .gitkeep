@@ -1,0 +1,2 @@
+git status --short
+git ls-files | Select-String "\.tif$|^\.env$"      # doit n'afficher rien
