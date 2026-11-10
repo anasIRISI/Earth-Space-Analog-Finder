@@ -19,3 +19,14 @@ data/processed/*
 !data/processed/.gitkeep
 *.log
 .DS_Store
+backend/data/mars/
+data/mars/source/
+.env
+data/mars/source/*
+backend/data/mars/*.tif
+backend/data/mars/*.aux.xml
+__pycache__/
+node_modules/
+frontend/dist/
+!data/mars/source/.gitkeep
+*.aux.xml

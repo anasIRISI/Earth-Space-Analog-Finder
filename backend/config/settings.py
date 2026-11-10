@@ -12,6 +12,7 @@ if sys.version_info[:2] != (3, 12):
 BASE_DIR = Path(__file__).resolve().parent.parent
 load_dotenv(BASE_DIR.parent / ".env", override=False)
 
+MARS_RASTER_DIR = BASE_DIR / "data" / "mars"
 
 def csv_env(name, default=""):
     return [value.strip() for value in os.environ.get(name, default).split(",") if value.strip()]
@@ -106,6 +107,7 @@ REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": ["rest_framework.authentication.SessionAuthentication"],
     "DEFAULT_RENDERER_CLASSES": ["rest_framework.renderers.JSONRenderer"],
     "EXCEPTION_HANDLER": "config.exceptions.api_exception_handler",
+    "DEFAULT_PERMISSION_CLASSES": ["rest_framework.permissions.AllowAny"],
 }
 SPECTACULAR_SETTINGS = {
     "TITLE": "Earth-Space Analog Finder API",
