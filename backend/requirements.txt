@@ -1106,3 +1106,8 @@ uritemplate==4.2.0 \
     --hash=sha256:480c2ed180878955863323eea31b0ede668795de182617fef9c6ca09e6ec9d0e \
     --hash=sha256:962201ba1c4edcab02e60f9a0d3821e82dfc5d2d6662a21abd533879bdb8a686
     # via drf-spectacular
+# via djangorestframework-gis
+django-filter==26.2 \
+    --hash=sha256:df8f737841d6359df00b84dda9b5ab59067fe60292091f1bdae1e3e6281cedb0
+djangorestframework-gis==1.3.0 \
+    --hash=sha256:6e39a16f17c62cb4f4e2a6e5c0821fe257a6bf458c48933e07dbc442262ee500
